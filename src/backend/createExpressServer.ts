@@ -13,11 +13,9 @@ const createExpressServer = (): Express => {
   app.use(compression());
 
   app.use(express.json())
-  app.use(cors())
+  
+  app.get('/', (_, res) => res.send('Hello from /'));
   app.use('/api', routes)
-
-
-  app.get('/', (_, res) => res.send('k it works Express + TypeScript Server'));
 
   return app;
 };
