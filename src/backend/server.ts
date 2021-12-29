@@ -12,7 +12,7 @@ const start = async () => {
     const app = createExpressServer();
   
     app.listen(PORT, () => {
-      console.log(`Server is running at http://localhost:${PORT}`);
+      console.log(`Express server is running at http://localhost:${PORT}`);
     });
   
     process.on('SIGINT', disconnectDb).on('SIGTERM', disconnectDb);
