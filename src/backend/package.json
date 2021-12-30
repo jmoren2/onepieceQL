@@ -4,7 +4,8 @@
     "description": "",
     "main": "server.ts",
     "scripts": {
-      "start": "nodemon server.ts"
+      "start": "nodemon server.ts",
+      "seed": "ts-node database/seeders/index.ts"
     },
     "author": "me",
     "license": "ISC",
